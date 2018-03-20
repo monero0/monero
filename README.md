@@ -1,43 +1,26 @@
-# Monero
+# Monero 0
 
+Copyright (c) 2018, Monero 0
 Copyright (c) 2014-2017, The Monero Project
 Portions Copyright (c) 2012-2013, The Cryptonote developers
 
 ## Development Resources
 
-- Web: [getmonero.org](https://getmonero.org)
-- Forum: [forum.getmonero.org](https://forum.getmonero.org)
-- Mail: [dev@getmonero.org](mailto:dev@getmonero.org)
-- GitHub: [https://github.com/monero-project/monero](https://github.com/monero-project/monero)
-- IRC: [#monero-dev on Freenode](http://webchat.freenode.net/?randomnick=1&channels=%23monero-dev&prompt=1&uio=d4)
+- Web: [monero0.org](https://monero0.org)
+- Mail: [monero0@protonmail.com](mailto:monero0@protonmail.com)
+- GitHub: [https://github.com/monero0/monero0](https://github.com/monero0/monero0)
 
-## Build
-
-| Operating System      | Processor | Status |
-| --------------------- | -------- |--------|
-| Ubuntu 16.04          |  i686    | [![Ubuntu 16.04 i686](https://build.getmonero.org/png?builder=monero-static-ubuntu-i686)](https://build.getmonero.org/builders/monero-static-ubuntu-i686)
-| Ubuntu 16.04          |  amd64   | [![Ubuntu 16.04 amd64](https://build.getmonero.org/png?builder=monero-static-ubuntu-amd64)](https://build.getmonero.org/builders/monero-static-ubuntu-amd64)
-| Ubuntu 16.04          |  armv7   | [![Ubuntu 16.04 armv7](https://build.getmonero.org/png?builder=monero-static-ubuntu-arm7)](https://build.getmonero.org/builders/monero-static-ubuntu-arm7)
-| Debian Stable         |  armv8   | [![Debian armv8](https://build.getmonero.org/png?builder=monero-static-debian-armv8)](https://build.getmonero.org/builders/monero-static-debian-armv8)
-| OSX 10.10             |  amd64   | [![OSX 10.10 amd64](https://build.getmonero.org/png?builder=monero-static-osx-10.10)](https://build.getmonero.org/builders/monero-static-osx-10.10)
-| OSX 10.11             |  amd64   | [![OSX 10.11 amd64](https://build.getmonero.org/png?builder=monero-static-osx-10.11)](https://build.getmonero.org/builders/monero-static-osx-10.11)
-| OSX 10.12             |  amd64   | [![OSX 10.12 amd64](https://build.getmonero.org/png?builder=monero-static-osx-10.12)](https://build.getmonero.org/builders/monero-static-osx-10.12)
-| FreeBSD 11            |  amd64   | [![FreeBSD 11 amd64](https://build.getmonero.org/png?builder=monero-static-freebsd64)](https://build.getmonero.org/builders/monero-static-freebsd64)
-| DragonFly BSD 4.6     |  amd64   | [![DragonFly BSD amd64](https://build.getmonero.org/png?builder=monero-static-dragonflybsd-amd64)](https://build.getmonero.org/builders/monero-static-dragonflybsd-amd64)
-| Windows (MSYS2/MinGW) |  i686    | [![Windows (MSYS2/MinGW) i686](https://build.getmonero.org/png?builder=monero-static-win32)](https://build.getmonero.org/builders/monero-static-win32)
-| Windows (MSYS2/MinGW) |  amd64   | [![Windows (MSYS2/MinGW) amd64](https://build.getmonero.org/png?builder=monero-static-win64)](https://build.getmonero.org/builders/monero-static-win64)
-
-## Coverage
+## License
 
 | Type      | Status |
 |-----------|--------|
-| Coverity  | [![Coverity Status](https://scan.coverity.com/projects/9657/badge.svg)](https://scan.coverity.com/projects/9657/)
-| Coveralls | [![Coveralls Status](https://coveralls.io/repos/github/monero-project/monero/badge.svg?branch=master)](https://coveralls.io/github/monero-project/monero?branch=master)
 | License   | [![License](https://img.shields.io/badge/license-BSD3-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 ## Introduction
 
-Monero is a private, secure, untraceable, decentralised digital currency. You are your bank, you control your funds, and nobody can trace your transfers unless you allow them to do so.
+We are an organization that have decided to break off from the Monero Project to start Monero 0. We’ve decided that the Monero Project’s strategy to continuously hard fork is no longer a stable or a sane strategy. We believe that Satoshi’s Proof of Work is the only mechanism for decentralized consensus. The so-called "network upgrades" that are centrally mandated by the Monero Project are a trojan horse designed to compromise the effectiveness of Proof of Work in the Monero network. Monero 0 is not a fork, it is the original Monero. 
+
+Monero 0 is a private, secure, untraceable, decentralised digital currency. You are your bank, you control your funds, and nobody can trace your transfers unless you allow them to do so.
 
 **Privacy:** Monero uses a cryptographically sound system to allow you to send and receive funds without your transactions being easily revealed on the blockchain (the ledger of transactions that everyone has). This ensures that your purchases, receipts, and all transfers remain absolutely private by default.
 
@@ -45,35 +28,26 @@ Monero is a private, secure, untraceable, decentralised digital currency. You ar
 
 **Untraceability:** By taking advantage of ring signatures, a special property of a certain type of cryptography, Monero is able to ensure that transactions are not only untraceable, but have an optional measure of ambiguity that ensures that transactions cannot easily be tied back to an individual user or computer.
 
-## About this Project
+## Technical Details
 
-This is the core implementation of Monero. It is open source and completely free to use without restrictions, except for those specified in the license agreement below. There are no restrictions on anyone creating an alternative implementation of Monero that uses the protocol and network in a compatible manner.
+Monero 0 is Monero v0.11.1.0, users already using Monero v0.11.1.0 or v0.11.0.0 do not need to do anything (You may need to run monerod with argument “--add-peer IP_ADDRESS” where IP_ADDRESS is one of our nodes listed below in order to find Monero 0 peers).
 
-As with many development projects, the repository on Github is considered to be the "staging" area for the latest changes. Before changes are merged into that branch on the main repository, they are tested by individual developers in their own branches, submitted as a pull request, and then subsequently tested by contributors who focus on testing and code reviews. That having been said, the repository should be carefully considered before using it in a production environment, unless there is a patch in the repository for a particular show-stopping issue you are experiencing. It is generally a better idea to use a tagged release for stability.
+159.65.227.38
+167.99.96.174
 
-**Anyone is welcome to contribute to Monero's codebase!** If you have a fix or code change, feel free to submit it as a pull request directly to the "master" branch. In cases where the change is relatively small or does not affect other parts of the codebase it may be merged in immediately by any one of the collaborators. On the other hand, if the change is particularly large or complex, it is expected that it will be discussed at length either well in advance of the pull request being submitted, or even directly on the pull request.
+New users should download Monero 0 from our github at https://github.com/monero0/monero0 , Monero 0 can be compiled off of master and binaries will be up shortly. 
 
 ## Supporting the Project
 
-Monero development can be supported directly through donations.
+Monero 0 development can be supported directly through donations.
 
-Both Monero and Bitcoin donations can be made to donate.getmonero.org if using a client that supports the [OpenAlias](https://openalias.org) standard
+The Monero 0 donation address is: `` (viewkey: ``)
 
-The Monero donation address is: `44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A` (viewkey: `f359631075708155cc3d92a32b75a7d02a5dcf27756707b47a2b31b21c389501`)
-
-The Bitcoin donation address is: `1KTexdemPdxSBcG55heUuTjDRYqbC5ZL8H`
+The Bitcoin donation address is: ``
 
 *Note: you can easily donate XMR to the Monero donation address by using the `donate` command. Type `help` in the command-line wallet for details.*
 
 Core development funding and/or some supporting services are also graciously provided by sponsors:
-
-[<img width="80" src="https://static.getmonero.org/images/sponsors/mymonero.png"/>](https://mymonero.com)
-[<img width="150" src="https://static.getmonero.org/images/sponsors/kitware.png?1"/>](http://kitware.com)
-[<img width="100" src="https://static.getmonero.org/images/sponsors/dome9.png"/>](http://dome9.com)
-[<img width="150" src="https://static.getmonero.org/images/sponsors/araxis.png"/>](http://araxis.com)
-[<img width="150" src="https://static.getmonero.org/images/sponsors/jetbrains.png"/>](http://www.jetbrains.com/)
-[<img width="150" src="https://static.getmonero.org/images/sponsors/navicat.png"/>](http://www.navicat.com/)
-[<img width="150" src="https://static.getmonero.org/images/sponsors/symas.png"/>](http://www.symas.com/)
 
 There are also several mining pools that kindly donate a portion of their fees, [a list of them can be found on our Bitcointalk post](https://bitcointalk.org/index.php?topic=583449.0).
 
@@ -88,19 +62,6 @@ If you want to help out, see [CONTRIBUTING](CONTRIBUTING.md) for a set of guidel
 ## Vulnerability Response Process
 
 See [Vulnerability Response Process](VULNERABILITY_RESPONSE_PROCESS.md).
-
-## Monero software updates and consensus protocol changes (hard fork schedule)
-
-Monero uses a fixed-schedule hard fork mechanism to implement new features. This means that users of Monero (end users and service providers) need to run current versions and update their software on a regular schedule. Here is the current schedule, versions, and compatibility.
-Dates are provided in the format YYYY-MM-DD. 
-
-
-| Fork Date              | Consensus version | Minimum Monero Version | Recommended Monero Version | Details            |  
-| ----------------- | ----------------- | ---------------------- | -------------------------- | ------------------ |
-| 2016-09-21        | v3                | v0.9.4                 | v0.10.0                    | Splits coinbase into denominations  |
-| 2017-01-05        | v4                | v0.10.1                 | v0.10.2.1                   | Allow normal and RingCT transactions |
-| 2017-04-15        | v5                | v0.10.3.0               | v0.10.3.1                    | Adjusted minimum blocksize and fee algorithm      |
-| 2017-09-21        | v6                | Not determined as of 2017-03-27                | Not determined as of 2017-03-27                    | Allow only RingCT transactions      |
 
 ## Installing Monero from a Package
 
@@ -159,7 +120,7 @@ library archives (`.a`).
 | liblzma        | any           | NO       | `liblzma-dev`      | `xz`           | YES      | For libunwind  |
 | ldns           | 1.6.17        | NO       | `libldns-dev`      | `ldns`         | YES      | SSL toolkit    |
 | expat          | 1.1           | NO       | `libexpat1-dev`    | `expat`        | YES      | XML parsing    |
-| GTest          | 1.5           | YES      | `libgtest-dev`^    | `gtest`        | YES      | Test suite     |
+| GTest          | 1.5           | YES      | `libgtest-dev`     | `gtest`        | YES      | Test suite     |
 | Doxygen        | any           | NO       | `doxygen`          | `doxygen`      | YES      | Documentation  |
 | Graphviz       | any           | NO       | `graphviz`         | `graphviz`     | YES      | Documentation  |
 
