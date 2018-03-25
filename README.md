@@ -41,9 +41,9 @@ New users should download Monero 0 from our github at https://github.com/monero0
 
 Monero 0 development can be supported directly through donations.
 
-The Monero 0 donation address is: `` (viewkey: ``)
+The Monero 0 donation address is: `4B2FJhLus1j4oxmBy9B2HWDTcXuYuizywZGzKY92L2Wi7s2ipfEcT1r7eAsmP5pPqpfKrs4XhjX3vTZsoNLXBJGUNVVHrCN`
 
-The Bitcoin donation address is: ``
+The Bitcoin donation address is: `1CBd6Sf3LCt5HFvaT57h8YEDz4LKXXgwdg`
 
 *Note: you can easily donate XMR to the Monero donation address by using the `donate` command. Type `help` in the command-line wallet for details.*
 
