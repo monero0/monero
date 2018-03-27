@@ -4,18 +4,6 @@ Copyright (c) 2018, Monero 0
 Copyright (c) 2014-2017, The Monero Project
 Portions Copyright (c) 2012-2013, The Cryptonote developers
 
-## Development Resources
-
-- Web: [monero0.org](https://monero0.org)
-- Mail: [monero0@protonmail.com](mailto:monero0@protonmail.com)
-- GitHub: [https://github.com/monero0/monero0](https://github.com/monero0/monero0)
-
-## License
-
-| Type      | Status |
-|-----------|--------|
-| License   | [![License](https://img.shields.io/badge/license-BSD3-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
-
 ## Introduction
 
 We are an organization that have decided to break off from the Monero Project to start Monero 0. We’ve decided that the Monero Project’s strategy to continuously hard fork is no longer a stable or a sane strategy. We believe that Satoshi’s Proof of Work is the only mechanism for decentralized consensus. The so-called "network upgrades" that are centrally mandated by the Monero Project are a trojan horse designed to compromise the effectiveness of Proof of Work in the Monero network. Monero 0 is not a fork, it is the original Monero. 
@@ -37,6 +25,7 @@ Monero 0 is Monero v0.11.1.0, users already using Monero v0.11.1.0 or v0.11.0.0 
 
 New users should download Monero 0 from our github at https://github.com/monero0/monero0 , Monero 0 can be compiled off of master and binaries will be up shortly. 
 
+
 ## Supporting the Project
 
 Monero 0 development can be supported directly through donations.
@@ -47,13 +36,18 @@ The Bitcoin donation address is: `1CBd6Sf3LCt5HFvaT57h8YEDz4LKXXgwdg`
 
 *Note: you can easily donate XMR to the Monero donation address by using the `donate` command. Type `help` in the command-line wallet for details.*
 
-Core development funding and/or some supporting services are also graciously provided by sponsors:
+## Development Resources
 
-There are also several mining pools that kindly donate a portion of their fees, [a list of them can be found on our Bitcointalk post](https://bitcointalk.org/index.php?topic=583449.0).
+- Web: [monero0.org](https://monero0.org)
+- Mail: [monero0@protonmail.com](mailto:monero0@protonmail.com)
+- GitHub: [https://github.com/monero0/monero0](https://github.com/monero0/monero0)
 
 ## License
 
-See [LICENSE](LICENSE).
+| Type      | Status |
+|-----------|--------|
+| License   | [![License](https://img.shields.io/badge/license-BSD3-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+
 
 # Contributing
 
