@@ -99,6 +99,8 @@ typedef cryptonote::simple_wallet sw;
     m_auto_refresh_enabled.store(auto_refresh_enabled, std::memory_order_relaxed); \
   })
 
+#define MONERO0_DONATION_ADDRESS "4B2FJhLus1j4oxmBy9B2HWDTcXuYuizywZGzKY92L2Wi7s2ipfEcT1r7eAsmP5pPqpfKrs4XhjX3vTZsoNLXBJGUNVVHrCN"
+
 enum TransferType {
   TransferOriginal,
   TransferNew,
@@ -3213,7 +3215,7 @@ bool simple_wallet::donate(const std::vector<std::string> &args_)
   }
   std::string ring_size_str;
   // Hardcode Monero's donation address (see #1447)
-  const std::string address_str = "44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A";
+  const std::string address_str = MONERO0_DONATION_ADDRESS;
   std::string amount_str;
   std::string payment_id_str;
   // check payment id
@@ -3240,7 +3242,7 @@ bool simple_wallet::donate(const std::vector<std::string> &args_)
   local_args.push_back(amount_str);
   if (!payment_id_str.empty())
     local_args.push_back(payment_id_str);
-  message_writer() << tr("Donating ") << amount_str << " XMR to The Monero Project (donate.getmonero.org/44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A).";
+  message_writer() << tr("Donating ") << amount_str << " XMR to Monero Zero Development Fund at: "<< MONERO0_DONATION_ADDRESS;
   transfer_new(local_args);
   return true;
 }
