@@ -25,6 +25,35 @@ Monero 0 is Monero v0.11.1.0, users already using Monero v0.11.1.0 or v0.11.0.0 
 
 New users should download Monero 0 from our github at https://github.com/monero0/monero0 , Monero 0 can be compiled off of master and binaries will be up shortly. 
 
+## FAQ
+
+*Is Monero 0 a hard fork from Monero?*
+
+No. Monero hard forked from itself when updating to version 12 from 11. We are fully compatible with version 11 of the Monero Network.
+
+*Why are you against hard forking?*
+
+We believe the decision to hard fork was made by a small group of developers in a unilateral manner. The hard fork compromises the security provided by Proof of Work.
+
+*Is Monero 0 premined?*
+
+No. Premine would be impossible.
+
+*Is this an ICO?*
+
+No.
+
+*How do I get Monero 0*
+
+If you have Monero, you will already have the equivalent amount of Monero 0.
+
+*Do you have replay protection?*
+
+No. It is on the responsibility of the cryptocurrency that is hard forking to implement replay protection. To avoid replay attacks, users should simultaneously transfer their balances to new seperate wallets on Monero and Monero 0. For more information regarding replay attack and replay protection, please consult this resources here: https://bitcointechtalk.com/how-to-protect-against-replay-attacks-7a00bd2fe52f
+
+*How is this project related to Monero V?*
+
+We are not associated with Monero V. They plan to hard fork from Monero (not Monero 0) after the hard fork to version 12.
 
 ## Supporting the Project
 
