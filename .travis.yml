@@ -1,0 +1,16 @@
+dist: trusty
+language: cpp
+compiler: g++
+
+before_install:
+    - sudo apt-get install -y pkg-config libboost-all-dev libssl-dev libunbound-dev libminiupnpc-dev libunwind8-dev liblzma-dev libldns-dev libexpat1-dev libgtest-dev doxygen graphviz
+
+script: make
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: sIYiHCKOHkLrHDBNOU9GFAZYZZoTdH7MIhrrAwYrxGgyinbcnPU+9y2gGyUGSXdHFrEFIddXj47VqYfkPKYUoagWgpMWRX9mmTXwYvVzpu6DDO8zYGShJ/4QyOp+jGsFhCJmqzNJaFTo9zouec2UF10VFvbQL8z/WQ74eAoT9NLwyoU4jR9TrC565f6Ez3fMBrZKTsKTVHpVQuOdifRwFZxokrFOhIaYH7IX15SxNdDQtevJeGfiSOhG31SgJ98Q8w8+4gVw48CdGh53Qcw80UN67w6YQelYTfU9BgNrY+7Rpol0B/PXrsdQT5wagFljIWJ72o0nR22bOC3C7tk7S5mEHAD/gfVtv4/IJA+KD0wmwXWKZb1umuJCLk+FdRugwd6pyS1C7xoHZW1ZM7XdJxm/xDjx+SEfoodCdhYWb6NqhJbL69kSbWhQSXvvTRgYDs2L5KVQrEFMgEBs9BL6eJv9Jove+aDIM83QF2usYg0pP4PH32hCPKtz27ooXhIOlUOyUid5ncXNFgUL88Ku7yo77jSYeyhsbhKQAcgC+Efs+9FNz5gArXhFZIjbshpInY5YTCTbrBEZ1HxrPGW5l0VNNv+SpZS42G2gr/rksBVlCgzvFi1BQoq04H8i5uOLRqot2zuCIYoJlRFgMLVpIxE6ifjmb3WOdHK7LXNj3hk=
+  keep-history: true
+  on:
+    branch: master
